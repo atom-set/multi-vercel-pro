@@ -41,12 +41,10 @@
       "name": "multi-vercel-pro-oodb.vercel.app"
     },
     {
-      "name": "multi-vercel-pro-oodb2.vercel.app",
-      "type": "CNAME"
+      "name": "multi-vercel-pro-oodb2.vercel.app"
     },
     {
-      "name": "multi-vercel-pro-oodb3.vercel.app",
-      "type": "CNAME"
+      "name": "multi-vercel-pro-oodb3.vercel.app"
     }
   ],
   "alias": {
