@@ -21,5 +21,37 @@
       "src": "/product3/(.*)",
       "dest": "/product3/$1"
     }
-  ]
+  ],
+  "rewrites": [
+    {
+      "source": "/product1/(.*)",
+      "destination": "/product1/$1"
+    },
+    {
+      "source": "/product2/(.*)",
+      "destination": "/product2/$1"
+    },
+    {
+      "source": "/product3/(.*)",
+      "destination": "/product3/$1"
+    }
+  ],
+  "domains": [
+    {
+      "name": "multi-vercel-pro-oodb.vercel.app"
+    },
+    {
+      "name": "multi-vercel-pro-oodb2.vercel.app",
+      "type": "CNAME"
+    },
+    {
+      "name": "multi-vercel-pro-oodb3.vercel.app",
+      "type": "CNAME"
+    }
+  ],
+  "alias": {
+    "multi-vercel-pro-oodb.vercel.app": "/product1",
+    "multi-vercel-pro-oodb2.vercel.app": "/product2",
+    "multi-vercel-pro-oodb3.vercel.app": "/product3"
+  }
 }
