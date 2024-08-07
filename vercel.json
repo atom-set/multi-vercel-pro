@@ -21,5 +21,8 @@
       "src": "/product3/(.*)",
       "dest": "/product3/$1"
     }
-  ]
+  ],
+  "alias": {
+    "multi-vercel-pro-a588.vercel.app": "/product1"
+  }
 }
