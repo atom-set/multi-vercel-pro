@@ -22,11 +22,6 @@
       "dest": "/product3/$1"
     }
   ],
-  "domains": [
-    {
-      "name": "multi-vercel-pro-oodb.vercel.app"
-    }
-  ],
   "alias": {
     "multi-vercel-pro-oodb.vercel.app": "/product1"
   }
