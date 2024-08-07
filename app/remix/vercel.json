@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "app/root.tsx",
+      "use": "@vercel/remix"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/app/root.tsx"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "builds": [
+    {
+      "src": "build.sh",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "output"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/express/(.*)",
+      "dest": "/express/$1"
+    },
+    {
+      "src": "/remix/(.*)",
+      "dest": "/remix/$1"
+    },
+    {
+      "src": "/react-spa/(.*)",
+      "dest": "/react-spa/$1"
+    }
+  ],
+  "domains": [
+    {
+      "name": "example.com"
+    },
+    {
+      "name": "express.example.com",
+      "type": "CNAME"
+    },
+    {
+      "name": "remix.example.com",
+      "type": "CNAME"
+    },
+    {
+      "name": "react-spa.example.com",
+      "type": "CNAME"
+    }
+  ],
+  "alias": {
+    "example.com": "/react-spa",
+    "express.example.com": "/express",
+    "remix.example.com": "/remix"
+  }
+}

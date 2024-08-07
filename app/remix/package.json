@@ -1,0 +1,13 @@
+{
+  "name": "remix-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "remix build",
+    "start": "remix-serve build"
+  },
+  "dependencies": {
+    "@remix-run/react": "^1.6.2",
+    "@remix-run/server-runtime": "^1.6.2",
+    "@remix-run/express": "^1.6.2"
+  }
+}

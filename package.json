@@ -1,0 +1,12 @@
+{
+  "name": "multi-vercel-pro",
+  "version": "1.0.0",
+  "description": "多项目部署到vercel",
+  "main": "index.js",
+  "scripts": {
+    "build": "./build.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
