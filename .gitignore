@@ -40,7 +40,6 @@ yarn.lock
 build/Release
 
 # Additional:
-dist
 build
 #.vscode
 .trash
