@@ -24,24 +24,24 @@
   ],
   "domains": [
     {
-      "name": "example.com"
+      "name": "multi-vercel-pro-v2.vercel.app"
     },
     {
-      "name": "express.example.com",
-      "type": "CNAME"
+      "name": "express.multi-vercel-pro-v2.vercel.app",
+      "type": "express"
     },
     {
-      "name": "remix.example.com",
-      "type": "CNAME"
+      "name": "remix.multi-vercel-pro-v2.vercel.app",
+      "type": "remix"
     },
     {
-      "name": "react-spa.example.com",
-      "type": "CNAME"
+      "name": "react-spa.multi-vercel-pro-v2.vercel.app",
+      "type": "react-spa"
     }
   ],
   "alias": {
-    "example.com": "/react-spa",
-    "express.example.com": "/express",
-    "remix.example.com": "/remix"
+    "multi-vercel-pro-v2.vercel.app": "/react-spa",
+    "express.multi-vercel-pro-v2.vercel.app": "/express",
+    "remix.multi-vercel-pro-v2.vercel.app": "/remix"
   }
 }
