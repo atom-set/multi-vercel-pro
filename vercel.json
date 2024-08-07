@@ -4,44 +4,54 @@
       "src": "build.sh",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "output"
+        "distDir": "dist"
       }
     }
   ],
   "routes": [
     {
-      "src": "/express/(.*)",
-      "dest": "/express/$1"
+      "src": "/product1/(.*)",
+      "dest": "/product1/$1"
     },
     {
-      "src": "/remix/(.*)",
-      "dest": "/remix/$1"
+      "src": "/product2/(.*)",
+      "dest": "/product2/$1"
     },
     {
-      "src": "/react-spa/(.*)",
-      "dest": "/react-spa/$1"
+      "src": "/product3/(.*)",
+      "dest": "/product3/$1"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/product1/(.*)",
+      "destination": "/product1/$1"
+    },
+    {
+      "source": "/product2/(.*)",
+      "destination": "/product2/$1"
+    },
+    {
+      "source": "/product3/(.*)",
+      "destination": "/product3/$1"
     }
   ],
   "domains": [
     {
-      "name": "multi-vercel-pro-v2.vercel.app"
+      "name": "example.com"
     },
     {
-      "name": "express.multi-vercel-pro-v2.vercel.app",
-      "type": "express"
+      "name": "product1.example.com",
+      "type": "CNAME"
     },
     {
-      "name": "remix.multi-vercel-pro-v2.vercel.app",
-      "type": "remix"
-    },
-    {
-      "name": "react-spa.multi-vercel-pro-v2.vercel.app",
-      "type": "react-spa"
+      "name": "product2.example.com",
+      "type": "CNAME"
     }
   ],
   "alias": {
-    "multi-vercel-pro-v2.vercel.app": "/react-spa",
-    "express.multi-vercel-pro-v2.vercel.app": "/express",
-    "remix.multi-vercel-pro-v2.vercel.app": "/remix"
+    "product1.example.com": "/product1",
+    "product2.example.com": "/product2",
+    "example.com": "/product3"
   }
 }
