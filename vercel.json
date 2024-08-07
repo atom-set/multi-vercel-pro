@@ -24,21 +24,10 @@
   ],
   "domains": [
     {
-      "name": "multi-vercel-pro-oodb.vercel.app",
-      "type": "A"
-    },
-    {
-      "name": "multi-vercel-pro-oodb2.vercel.app",
-      "type": "A"
-    },
-    {
-      "name": "multi-vercel-pro-oodb3.vercel.app",
-      "type": "A"
+      "name": "multi-vercel-pro-oodb.vercel.app"
     }
   ],
   "alias": {
-    "multi-vercel-pro-oodb.vercel.app": "/product1",
-    "multi-vercel-pro-oodb2.vercel.app": "/product2",
-    "multi-vercel-pro-oodb3.vercel.app": "/product3"
+    "multi-vercel-pro-oodb.vercel.app": "/product1"
   }
 }
